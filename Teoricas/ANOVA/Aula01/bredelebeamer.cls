@@ -13,10 +13,6 @@
 \PassOptionsToPackage{svgnames}{xcolor}
 \LoadClass[compress,8pt]{beamer}
 
-
-
-
-
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -26,16 +22,6 @@
 \usepackage[footnotesize,hang]{caption} % réduire la taille des légendes des images
 \usepackage{hyperref}
 \usepackage{tikz}
-
-
-
-
-
-
-
-
-
-
 
 %%%% Les Framacouleurs
 
@@ -55,8 +41,7 @@
 \definecolor{Framamarronlight}{RGB}{215,204,200}
 \definecolor{Framagris}{RGB}{97,97,97}
 \definecolor{Framagrislight}{RGB}{245,245,245}
-
-
+\definecolor{Bleudefrance}{RGB}{19,55,91}
 
 %%%%%%%%%%%% Tableaux
 \usepackage{tcolorbox}
@@ -67,7 +52,6 @@
 
 
 %%%% Merci : http://tex.stackexchange.com/questions/112343/beautiful-table-samples
-
 
 \newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
 
@@ -102,17 +86,7 @@ coltitle=white,center title}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-
-
-
-
-
-
 \beamerboxesdeclarecolorscheme{orange}{Framaorange}{Framaorangelight}
-
-
 
 \usecolortheme[named=Framableu]{structure}
 
@@ -154,7 +128,6 @@ coltitle=white,center title}}
 \definecolor{alertBlockTextColor}{RGB}{0,0,0} % noir
 \definecolor{alertBlockTitleTextColor}{RGB}{255,255,255} % blanc
 
-
 \setbeamertemplate{blocks}[rectangle]
 
 \setbeamercolor{section in head/foot}{bg=sectionColor, fg=sectionTextColor}
@@ -173,7 +146,6 @@ coltitle=white,center title}}
 \setbeamercolor{itemize item}{fg=titleColor!70}
 \setbeamercolor{enumerate item}{fg=titleColor!70}
 \setbeamercolor{description item}{fg=titleColor!70}
-
 
 \useinnertheme{default}
 \setbeamercolor{item projected}{bg=chipColor,fg=chipTextColor}
@@ -221,6 +193,7 @@ leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
 % emphase
 \renewcommand{\emph}[1]{\textcolor{Framaorange}{\textbf{#1}}}
 
+\newcommand{\emphblue}[1]{\textcolor{Bleudefrance}{\textbf{#1}}}
 
 \usepackage{etoolbox}
 \AtBeginEnvironment{exampleblock}{%
@@ -308,4 +281,11 @@ leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
 \end{center}
 }
 
+%% \newcommand{\logoo}[1]{
+%% \begin{flushleft}
+%% \begin{minipage}{0.3\textwidth}
+%% #1
+%% \end{minipage}
+%% \end{flushleft}
+%% }
 
