@@ -47,6 +47,10 @@
 \usepackage{tcolorbox}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{color}
 \usepackage{colortbl}
 \tcbuselibrary{skins}
 
@@ -206,6 +210,25 @@ leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
   \setbeamercolor{itemize item}{fg=normalTitleBlockColor!70}
 }
 
+\newcommand{\boiteblack}[1]{
+\begin{center}
+\fcolorbox{Black}{white}{
+\begin{minipage}{0.7\textwidth}
+#1
+\end{minipage}
+}
+\end{center}
+}
+
+\newcommand{\boitegreen}[1]{
+\begin{center}
+\fcolorbox{Black}{Green}{
+\begin{minipage}{0.5\textwidth}
+#1
+\end{minipage}
+}
+\end{center}
+}
 
 \newcommand{\boitejaune}[1]{
 \begin{center}
@@ -288,4 +311,5 @@ leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
 %% \end{minipage}
 %% \end{flushleft}
 %% }
+
 
